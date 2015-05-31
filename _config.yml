@@ -1,13 +1,13 @@
 # Site settings
-title: Clean Blog
+title: Aditya Pratap Singh
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+description: "Personal blog"
+email: aditya.singh90@hotmail.com
+baseurl: ""
+url: "http://www.adityapsingh.com"
+twitter_username: aditya_psingh
+github_username:  addi90
+facebook_username:  ''
 
 # Build settings
 markdown: kramdown
