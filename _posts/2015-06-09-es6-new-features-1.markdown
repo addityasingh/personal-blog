@@ -2,9 +2,9 @@
 layout:     post-dark
 title:      "ES6 Introduction - Part 1"
 subtitle:   "A brief overview to understand new features in ES6, including Strings, Objects, let"
-date:       2015-06-01 12:00:00
+date:       2015-06-09 20:00:00
 author:     "Aditya Pratap Singh"
-header-img: "img/post-bg-random-04.jpg"
+header-img: "img/dist/post-bg-random-04.jpg"
 ---
 
 <h2><i>Better String Support: </i></h2>

@@ -4,7 +4,7 @@ title:      "Memory management in JavaScript"
 subtitle:   "Performance optimizations by utilizing javascript memory management details"
 date:       2015-06-01 12:00:00
 author:     "Aditya Pratap Singh"
-header-img: "img/post-bg-random-01.jpg"
+header-img: "img/dist/post-bg-random-01.jpg"
 ---
 
 <p>JavaScript as a language does not perform Garbage collection but this task is handled by browser. Whenever a webpage has some stuck-up effect, the reason behind is the browser performing Garbage collection behind the scene. </p>
