@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Memory management in JavaScript"
-subtitle:   "Perormance optimizations by utilizing javascript memory management details"
+subtitle:   "Performance optimizations by utilizing javascript memory management details"
 date:       2015-06-01 12:00:00
 author:     "Aditya Pratap Singh"
 header-img: "img/post-bg-random-01.jpg"
