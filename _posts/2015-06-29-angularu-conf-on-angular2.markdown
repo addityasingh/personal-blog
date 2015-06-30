@@ -7,16 +7,26 @@ author:     "Aditya Pratap Singh"
 header-img: "img/dist/home-bg.jpg"
 ---
 
-<p>The <a href="https://angularu.com/ng/">AngularU conference</a> held in San Francisco between 22-25th June was a huge success. I have covered few of the important points that I got from the videos and are worth sharing. The Opening keynote was done by Igor Minar, Brad Green and Misko Hevery, the minds behind and creators of AngularJS. The events that followed on each of the days and their excerpts: </p>
+<p>The <a class="custom-links" href="https://angularu.com/ng/">AngularU conference</a> held in San Francisco between 22-25th June was a huge success. I have covered few of the important points that I got from the videos which are worth sharing. The Opening keynote was done by <i>Igor Minar, Brad Green and Misko Hevery</i>, the brains behind creating AngularJS. The events that followed on each of the days are listed below: </p>
 
 <section>
-Day 1: 
+<b><i>Day 1:</i></b> It was primarily focussed on <a class="custom-links" href="https://angular.io/">Angular 2 </a> and the new concepts which makes it different and better
 <ol>
 	<li>
-		<b><i>Separation of application engine from Rendering engine:</i></b> By utilising Web workers for all the purposes except for manipulating DOM, the application engine has been separated from rendering engine. This has 2 obvious benefits: First, the speed is 3X of existing angular-1.x version. Second, It could use the same to leverage it for mobile and desktop along with web. 
+		<b><i>Separation of application engine from Rendering engine:</i></b> By utilizing <a class="custom-links" href="http://www.html5rocks.com/en/tutorials/workers/basics/">Web workers</a> for all purposes, except for manipulating DOM, application engine has been separated from rendering engine. This has 2 obvious benefits: 
+			<ul>
+				<li>
+					the speed is 3X of existing angular-1.x version
+				</li>
+				<li>
+					It could use the same to leverage it for mobile and desktop along with web, similar to ReactJS
+				</li>
+			</ul>
 	</li>
 	<li>
-		<b><i>Utilizes TypeScript:</i></b> <q>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.- From <a href="http://www.typescriptlang.org/"></a>></q> Since Angular 2 is built on top of TypeScript, it lets us use the strong type system of TypeScript and features of ES6 (now ES2015) and ES7. More on TypeScript, ES6 in separate articles</li>
+		<div><b><i>Utilizes TypeScript:</i></b> <blockquote>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.-<cite> <a class="custom-links" href="http://www.typescriptlang.org/">TypeScript.com</a></cite></blockquote> <br/>
+		Since Angular 2 is built on top of TypeScript, it lets us use the strong type system of TypeScript and features of ES6 (now ES2015) and ES7. I will cover more on TypeScript and ES6 in separate future articles, as they are huge interesting topics on themselves.</div>
+	</li>
 	<li>
 		<b><i>Changed thinking for existing components:</i></b> I guess this will be the biggest change in the way we think about existing angular-1.x components. The major changes are:
 			<ul>
@@ -34,7 +44,8 @@ Day 1:
 </section>
 
 <section>
-Day 2:
+
+<b><i>Day 2:</i></b>
 <ol>
 	<li>
 		<b><i>TypeScript by Jonathan Turner: </i></b> The second day illustrated the awsome features TypeScript has and the amount of developer headaches it removes while developing. There are discussions going on the implementation of async/await (An ES7 feature) in TypeScript.
@@ -48,11 +59,13 @@ Day 2:
 </section>
 
 <section>
-Day 3:
+<b><i>Day 3:</i></b>
 
-<p>
-	<b><i>Angular 2 with Microsoft technologies:</i></b> The third day started with Microsoft MVP, Andrew Connell's intro of Angular 2 introduction with Microsoft technologies TypeScript, Azure, O365. He also demonstrated the TypeScript Definition files .tsd by <a href="https://github.com/DefinitelyTyped/tsd">DefinitelyTyped</a>  The whole lot of demos and content is available at Andrew's <a href="https://github.com/andrewconnell/pres-enterprise-ng-mstech">github repo</a> 
-</p>
+<ul>
+	<li>
+		<b><i>Angular 2 with Microsoft technologies:</i></b> The third day started with Microsoft MVP, Andrew Connell's intro of Angular 2 introduction with Microsoft technologies TypeScript, Azure, O365. He also demonstrated the TypeScript Definition files .tsd by <a class="custom-links" href="https://github.com/DefinitelyTyped/tsd">DefinitelyTyped</a>  The whole lot of demos and content is available at Andrew's <a class="custom-links" href="https://github.com/andrewconnell/pres-enterprise-ng-mstech">github repo</a> 
+	</li>
+</ul>
 </section>
 
-<p>Reference: <a href="https://angularu.com/ng/videos">angularu.com/ng/videos</a></p>
+<p>Reference: <a class="custom-links" href="https://angularu.com/ng/videos">angularu.com/ng/videos</a></p>
