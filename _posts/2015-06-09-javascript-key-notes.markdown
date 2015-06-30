@@ -4,7 +4,7 @@ title:      "JavaScript: Key note on basics"
 subtitle:   "The best practices on minute details ignored which cause bugs in code"
 date:       2015-06-09 12:00:00
 author:     "Aditya Pratap Singh"
-header-img: "img/dist/post-bg-random-02.jpg"
+header-img: "img/dist/home-bg.jpg"
 ---
 <p> Part 1 </p>
 
