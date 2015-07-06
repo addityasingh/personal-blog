@@ -12,15 +12,15 @@ Angular's provider is a way to add custom behaviour to the service instances. A 
 Decorators (<code>provider.decorate()</code>) is a way to augment the provider with additional behaviour while configuring module, even before injecting it. 
 <blockquote>A service decorator intercepts the creation of a service, allowing it to override or modify the behaviour of the service. The object returned by the decorator may be the original service, or a new service object which replaces or wraps and delegates to the original service. - <cite><a href="https://docs.angularjs.org/api/auto/service/$provide">docs.angularjs.org</a></cite></blockquote>
 
-In order to make the url for a given path as insensitive angular router provides us with a property <code>caseInsensitiveMatch</code> which can be used as below to make a given path to make ot case insensitive.
+In order to make the url for a given path as case insensitive, angular router provides us with a property <code>caseInsensitiveMatch</code> which can be used as below to make given path case insensitive.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/sublimejs/x7kbdeux/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-But the above approach is not very efficient if we want to make all the routes case-insensitive. Here comes decoratprs to the rescue. Using the <code>provider.decorate()</code> we can wrap the <code>$route</code> service provider to make the url case insensitive. Below decorator code snippet makes the routes case-insensitive. 
+But the above approach is not very efficient if we want to make all the routes case-insensitive. Here comes decorators to the rescue. Using the <code>provider.decorate()</code> we can wrap the <code>$route</code> service provider to make the url case insensitive. Below decorator code snippet makes the routes case-insensitive. 
 
 <iframe width="100%" height="300" src="//jsfiddle.net/sublimejs/v7fLjnsj/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Step wise description:
+<strong><i>Step wise description:</i></strong>
 <ol>
 	<li>
 	We have created a basic angular app with config block
