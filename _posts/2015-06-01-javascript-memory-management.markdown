@@ -18,7 +18,7 @@ header-img: "img/dist/home-bg.jpg"
   <li><b><i>Reuse existing arrays: </i></b> Emptying an array by assigning it to [] creates a new array instead of emptying existing one. To reuse an array, use array.length = 0 instead. </li>
 
   <li><b><i>Reuse existing function: </i></b> Functions which are being called again and again can be allocated memory by assigning to variable and then using the variable. E.g.: 
-
+		<br/>
     <code> setInterval(function(){ alert("a");}, 1000); </code> <br/>
     can be rewritten as <br/>
     <code> var func = function(){ alert("a");};</br>
