@@ -53,7 +53,7 @@ header-img: "img/dist/home-bg.jpg"
 			<b><i>Move business logic and data fetching logic to services:</i></b> Retrieving data and storing data should be moved to skeleton services. Since controllers are plugged/unplugged based on route changes, they should not hold persistent data.
 		</li>
 		<li>
-			<b><i>Use <code>ui-router</code> instead of <code>ng-router</code>: </i></b>  Since <code>ui-router</code> depicts the actual herirarchical structure of an app and it also retains the parent view data while navigating to sub-view. This allows for a smooth transition between parent and child views.
+			<b><i>Use <code>ui-router</code> instead of <code>ng-router</code>: </i></b>  Since <code>ui-router</code> depicts the actual hierarchical structure of an app and it also retains the parent view data while navigating to sub-view. This allows for a smooth transition between parent and child views.
 		</li>
 
 	</ol>
