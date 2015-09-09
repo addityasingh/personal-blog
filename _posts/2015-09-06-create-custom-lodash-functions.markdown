@@ -16,7 +16,7 @@ But, at times the given set of utilities appear constrained for our usage. In su
 Let us take one such scenario and create a new function <code>$upsert</code> which mutates an array and update a given object in array based on passed criterion. 
 This is a common scenario and to use this, we may have to create a function such as below and call it everytime using <code>_.bind </code>:
 </p>
-<iframe width="100%" height="300" src="//jsfiddle.net/sublimejs/3wLahfLv/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/cexico/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
 
 <p>
 <h4><b><i>_.mixin</i></b></h4>
@@ -24,7 +24,7 @@ A much better way is to add this method being called as part of the lo-dash libr
 for this. Let us see how we can use the above code to create the mixin and use it conveniently and even on function chains.
 </p>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/sublimejs/9ocfbcof/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/tonega/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.3"></script>
 
 <p> That's it! Using the same <code>_.mixin</code> method we can even decorate/ augment existing library methods. But, we should be cautious in doing so as it may have unwanted side-effects
  on parts of our code.</p>
