@@ -76,6 +76,19 @@ module.exports = function(grunt) {
                     use: [mozjpeg()]
                 }
             }
+        },
+        pngmin: {
+          compile: {
+            options: {
+              ext: '.png'
+            },
+            files: [
+              {
+                src: ['img/src/**/*.{png,jpg,gif}'],
+                dest: 'img/dist/'
+              }
+            ]
+          }
         }
     });
 
@@ -84,9 +97,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-imagemin')
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-pngmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'imagemin']);
+    grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'pngmin']);
 
 };
