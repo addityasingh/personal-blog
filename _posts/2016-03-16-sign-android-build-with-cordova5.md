@@ -54,7 +54,8 @@ The steps to sign the new way are:
 or with Ionic as 
 <pre><code>ionic build android --release --buildConfig=build.json</code></pre>
   </li>
-  
+<br />
+
 The signed file will be generated under the new folder structure at <pre><code>/platforms/android/build/outputs/apk/android-release.apk</code></pre>
  
  
