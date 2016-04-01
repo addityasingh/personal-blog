@@ -56,11 +56,11 @@ In order to setup Push notification for an Ionic app for iOS we need 2 things
   ![Save the Certificate signing request]({{ site.url }}/img/dist/keychain-request-cert-3.png)
 
   
-2.  Create an **App Id**: Apple identifies every app by a unique app id added in dev center. This is by convention named in reverse-DNS format and will be same as app's bundle id (mentioned in config.xml as `ios-CFBundleIdentifier` in <widget>). E.g. com.aditya.myapp
+2.  Create an **App Id**: Apple identifies every app by a unique app id added in dev center. This is by convention named in reverse-DNS format and will be same as app's bundle id (mentioned in `config.xml` as `ios-CFBundleIdentifier`). E.g. com.aditya.myapp
   - Go to Apple Developer Center
   - Open Certificates , Identifiers & Profiles
   ![Apple Developer center]({{ site.url }}/img/dist/apple-developer-center.png)
-  - Open Identifiers section and click '+' to add a new app
+  - Open Identifiers section and click **+** to add a new app
   ![Click + to create new app]({{ site.url }}/img/dist/ios-create-app-id-0.png)
   - Provide an app name and select the checkbox for **Push Notifications** under **App Services**
   ![Provide name for new app and add services]({{ site.url }}/img/dist/ios-create-app-id-2.png)
@@ -81,12 +81,11 @@ In order to setup Push notification for an Ionic app for iOS we need 2 things
   - On the next screen locate **.certSigningRequest** file and once selected, it will give option to 
     download the certificates for the app configured with Push Notification services.
   ![Download certificates]({{ site.url }}/img/dist/ios-configure-push-notif-4.png)
-  - Download the dev version of the cert. This will be a file name `aps_development.cer`
+  - Download the dev version of the cert. This will be a file named `aps_development.cer`
   - Double click it to add it to keychain
   - Locate this cert in keychain. It will be present with the name of the app
   - Right click to export this certificate as `.p12` file and save
-  - Provide a password when prompted and note it down for later purposes. This is optional but recommended
-
+  - Provide a password when prompted and note it down for later purposes. This is optional, but recommended
 
 4.  Provide the `.p12` generated above to your app server for App Server to interact with APNs for any further communications. 
 
