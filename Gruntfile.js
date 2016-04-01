@@ -102,5 +102,6 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'pngmin']);
+    grunt.registerTask('css', ['less']);
 
 };
