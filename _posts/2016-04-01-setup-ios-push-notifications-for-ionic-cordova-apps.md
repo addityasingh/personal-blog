@@ -107,8 +107,7 @@ In order to setup Push notification for an Ionic app for iOS we need 2 things
     ![Download provisioning profile]({{ site.url }}/img/dist/provisioning-profile-2.png)
   - This will add the provisioning profile to **XCode** and you are ready to use the Push Notification on development machine.
     You can provide the path to the provisioning profile while generating a manual build using `xcodebuild` as below
-    
-    <code> xcodebuild PROVISIONING_PROFILE="$PATH_TO_PROVISIONING_PROFILE" CODE_SIGN_IDENTITY="$DEVELOPER_TEAM_ID" </code>
+    {% gist 68956e1cb3a1cab9bb3513df64e3907d build-ios.sh %}
 
 
 **Setup push plugin and JavaScript code**
