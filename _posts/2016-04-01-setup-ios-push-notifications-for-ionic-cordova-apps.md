@@ -26,12 +26,12 @@ we will first understand the entities involved and the flow during the complete 
   - **Handshake between APNs and App Server to setup Trust**
    
     ![Setup trust between App Server and APNS](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Art/service_provider_ct_2x.png)
-Source: ![Apple](https://developer.apple.com/)
+Source: [Apple](https://developer.apple.com/)
   
   - **Device Token Generation**
   
     ![Setup trust between Device and APNS](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Art/token_generation_2x.png)
-Source: ![Apple](https://developer.apple.com/)
+Source: [Apple](https://developer.apple.com/)
 
   - **Send the Push Notifications**
     Once the above steps are completed, while sending the Push notification our App Server sends a Push Notification request to APNs, 
