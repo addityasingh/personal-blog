@@ -26,11 +26,13 @@ we will first understand the entities involved and the flow during the complete 
   - **Handshake between APNs and App Server to setup Trust**
    
     ![Setup trust between App Server and APNS](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Art/service_provider_ct_2x.png)
+Source: ![Apple](https://developer.apple.com/)
   
   - **Device Token Generation**
   
     ![Setup trust between Device and APNS](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Art/token_generation_2x.png)
-  
+Source: ![Apple](https://developer.apple.com/)
+
   - **Send the Push Notifications**
     Once the above steps are completed, while sending the Push notification our App Server sends a Push Notification request to APNs, 
     using its certificate and devicetoken for the required device. APNs uses App server's certificate information 
@@ -47,23 +49,23 @@ In order to setup Push notification for an Ionic app for iOS we need 2 things
 1.  Create a **Certificate Signing Request**:
   - Open **Keychain Access** tool on Mac
   - Open **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority**
-  ![Click + to create new app]({{ site.url }}/img/dist/keychain-request-cert-1.png)
+  ![Request new certificate]({{ site.url }}/img/dist/keychain-request-cert-1.png)
   - Enter name and address. These are optional
-  ![Click + to create new app]({{ site.url }}/img/dist/keychain-request-cert-2.png)
+  ![Enter name and address for the certificate]({{ site.url }}/img/dist/keychain-request-cert-2.png)
   - Save it to disk. This will generate your certificate singing request file and it will be saved as **.certSigningRequest** file
-  ![Click + to create new app]({{ site.url }}/img/dist/keychain-request-cert-3.png)
+  ![Save the Certificate signing request]({{ site.url }}/img/dist/keychain-request-cert-3.png)
 
   
 2.  Create an **App Id**: Apple identifies every app by a unique app id added in dev center. This is by convention named in reverse-DNS format and will be same as app's bundle id (mentioned in config.xml as `ios-CFBundleIdentifier` in <widget>). E.g. com.aditya.myapp
   - Go to Apple Developer Center
   - Open Certificates , Identifiers & Profiles
-  ![Click + to create new app]({{ site.url }}/img/dist/apple-developer-center.png)
+  ![Apple Developer center]({{ site.url }}/img/dist/apple-developer-center.png)
   - Open Identifiers section and click '+' to add a new app
   ![Click + to create new app]({{ site.url }}/img/dist/ios-create-app-id-0.png)
   - Provide an app name and select the checkbox for **Push Notifications** under **App Services**
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-create-app-id-2.png)
+  ![Provide name for new app and add services]({{ site.url }}/img/dist/ios-create-app-id-2.png)
   -  Provide app prefix and suffix. Prefix can be the default one, which is the Team Id. while suffix can be the app's bundle id (in reverse-DNS format)
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-create-app-id-1.png)
+  ![Add app prefix and suffix]({{ site.url }}/img/dist/ios-create-app-id-1.png)
   -  Select `Continue`. This will show the app as `Configurable`
   -  Save the app
 
@@ -71,14 +73,14 @@ In order to setup Push notification for an Ionic app for iOS we need 2 things
 3.  Configure the app to send Push notifications:
   - From list of apps, open the newly created app
   - Click **Edit** and select the push notification service which says **Configurable**
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-configure-push-notif-1.png)
+  ![Configure app for push]({{ site.url }}/img/dist/ios-configure-push-notif-1.png)
   - Enable it by clicking on **Create Certificate**
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-configure-push-notif-2.png)
+  ![Create certificate]({{ site.url }}/img/dist/ios-configure-push-notif-2.png)
   - This will take you to this screen. Since we already have the **.certSigningRequest**, press **Continue**
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-configure-push-notif-3.png)
+  ![Create certificate continue]({{ site.url }}/img/dist/ios-configure-push-notif-3.png)
   - On the next screen locate **.certSigningRequest** file and once selected, it will give option to 
     download the certificates for the app configured with Push Notification services.
-  ![Click + to create new app]({{ site.url }}/img/dist/ios-configure-push-notif-4.png)
+  ![Download certificates]({{ site.url }}/img/dist/ios-configure-push-notif-4.png)
   - Download the dev version of the cert. This will be a file name `aps_development.cer`
   - Double click it to add it to keychain
   - Locate this cert in keychain. It will be present with the name of the app
