@@ -409,3 +409,18 @@ body {
 .custom-links{
   text-decoration: underline;
 }
+
+.figure-container:hover figure,
+.figure-container:active figure {
+    box-shadow: 1px 1px 6px 3px #ebebeb;
+}
+
+.figure-container figure {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about-container .row {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

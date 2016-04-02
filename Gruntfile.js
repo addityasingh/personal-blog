@@ -101,7 +101,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-pngmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'pngmin']);
+    grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'pngmin', 'imagemin']);
     grunt.registerTask('css', ['less']);
 
 };
