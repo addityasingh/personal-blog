@@ -2,7 +2,7 @@
 layout:     post
 title:      "ES2015 code snippets using pure functions"
 subtitle:   "Functional code snippets for commonly used utility methods using ES2015"
-date:       2016-05-14 11:00:00
+date:       2016-05-14 05:00:00
 author:     "Aditya Pratap Singh"
 header-img: "img/dist/home-bg.jpg"
 ---
