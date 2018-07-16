@@ -34,4 +34,4 @@ We will see the step-by-step implementation of the scenario using <code> Augment
 	 <iframe width="100%" height="300" src="//jsfiddle.net/sublimejs/g8joLfxv/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 </ol>
 
-	With the above steps, the workflow to implement caching embedded along side <code>http</code> requests is very inherent. 
+With the above steps, the workflow to implement caching embedded along side <code>http</code> requests is very inherent. 
